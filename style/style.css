@@ -6,7 +6,7 @@
 }
 body {
   background: #fff;
-  letter-spacing: 5px;
+  letter-spacing: 3px;
   font-family: Apollo;
 }
 
@@ -57,7 +57,7 @@ body {
   background: rgb(180,50,76);
 }
 .navbar-fixed nav .brand-logo{
-  letter-spacing: 10px !important;
+  letter-spacing: 5px !important;
   margin-left: 2%;
   color: #fff;
   font-size: clamp(1rem, 2vw, 8rem);
@@ -120,7 +120,11 @@ body {
     color: #fff;
   }
 
-  .footer{
+  .footer{    
+    padding: 5px;    
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
     background: #000;
     color: #fff;
     font-size: 12px;

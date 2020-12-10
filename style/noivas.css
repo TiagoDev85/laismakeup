@@ -25,22 +25,22 @@ h1{
   grid-template-columns: 50% 50%;
   grid-template-areas: "photo text";  
 }
-.noivas p{
-  text-indent: 30px;
-  font-size: clamp(1rem, 1vw, 4rem);
-  text-align: justify;  
+.noivas p{  
+  font-size: clamp(1rem, 1vw, 4rem);  
 }
 
 h3{
   font-size: clamp(1rem, 2vw, 4rem);
+  font-weight: 900;
 }
 .texto{  
+  /* text-indent: 30px; */
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  text-align: justify;
+  text-align: center;
   padding: 20px;
   font-size: clamp(1rem, 1vw, 4rem);  
 }
@@ -85,31 +85,19 @@ h3{
     width: 100%;
   }  
   
-  .noivas .texto1 {
-    display: flex;
-    align-items: center;
-    text-align: justify;
-    padding: 20px;
-    grid-area: text;
+  .texto{   
     font-size: clamp(1rem, 1vw, 4rem);  
   }
-  
-  .noivas .texto2 {
-    display: flex;
-    align-items: center;
-    text-align: justify;
-    padding: 20px;
+  .noivas .texto1 {    
     grid-area: text;
-    font-size: clamp(1rem, 1vw, 4rem);  
   }
   
-  .noivas .texto3 {
-    display: flex;
-    align-items: center;
-    text-align: justify;
-    padding: 20px;
-    grid-area: text;
-    font-size: clamp(1rem, 1vw, 4rem);  
+  .noivas .texto2 {    
+    grid-area: text;    
+  }
+  
+  .noivas .texto3 {    
+    grid-area: text;    
   }
 }
 

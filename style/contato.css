@@ -10,6 +10,9 @@ body{
 .footer{
   display: none;
 }
+.info2{
+  display: none;
+}
 
 /* PÁGINA NOIVAS */
 .container{     
@@ -29,11 +32,60 @@ h1{
   margin: 0 auto;
   padding: 40px;
   background: #fff;
-  width: 50%;
-  height: 70vh;
-  border: 1px solid #000;
+  width: 100%;  
+  display: flex;
+  gap: 50px;
+  flex-direction: row;
+  justify-content: center;  
+  /* border: 1px solid #000; */
 }
-.contato input[type = text]{
+.info{
+  text-align: center;
+  font-size: clamp(1rem, 2vw, 4rem);
+}
+.social{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 96px;
+  height: 96px;
+  background: transparent;
+}
+.social .whatsapp{    
+  width: 68px;
+  height: 68px;
+  background-image: url(../img/icons/whatsapp.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 50%;
+}
+.social .whatsapp:hover{
+  opacity: 100%;
+}
+.social .instagram{    
+  width: 60px;
+  height: 60px;
+  background-image: url(../img/icons/instagram.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 50%;
+}
+.social .instagram:hover{
+  opacity: 100%;
+}
+.social .pinterest{    
+  width: 64px;
+  height: 64px;
+  background-image: url(../img/icons/pinterest.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 50%;
+}
+.social .pinterest:hover{
+  opacity: 100%;
+}
+/* .contato input[type = text]{
   color: #000;
   margin-top: 10px;
   margin-bottom: 20px;
@@ -61,7 +113,7 @@ h1{
 .contato input[type = submit]:hover{
   background: #666;
   cursor: pointer;
-}
+} */
 
 
 
@@ -70,7 +122,10 @@ h1{
   /* CONTEUDO */
   .contato{      
     width: 100%;    
-    padding: 20px;    
+    padding: 20px;  
+    gap: 10px !important;
+    flex-direction: column;  
+    align-items: center;
   }
   .contato input[type = text]{
     margin-top: 10px;    
@@ -78,8 +133,16 @@ h1{
   .contato input[type = submit]{
     position: absolute;
     right: 20px;
-    bottom: 15%;
-    
+    bottom: 15%;    
+  }
+  .info{
+    display: none;
+  }
+  .info2{
+    font-size: clamp(1rem, 2.5vh, 8.4rem);
+    display: flex;
+    align-items: center;    
+    flex-direction: column;
   }
 }
 
